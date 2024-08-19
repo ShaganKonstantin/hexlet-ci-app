@@ -1,0 +1,11 @@
+name: to practice
+on: push
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/setup-node@v3
+            - run: make setup
+            - run: make tests
+            - run: make lint
+
