@@ -18,8 +18,6 @@ jobs:
           node-version: 18
       - run: npm ci
       - run: npm test
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
       - run: make setup
       - run: make test
       - run: make lint
